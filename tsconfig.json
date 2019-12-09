@@ -2,9 +2,19 @@
   "compilerOptions": {
     "outDir": "./dist/",
     "noImplicitAny": true,
+    "moduleResolution": "node",
     "module": "es6",
     "target": "es5",
     "jsx": "react",
-    "allowJs": true
-  }
+    "allowJs": true,
+    "baseUrl": ".",
+    "downlevelIteration": true
+  },
+  "include": [
+    "src"
+  ],
+  "exclude": [
+    "node_modules/**/*",
+    "**/__tests__/*"
+  ]
 }
