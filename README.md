@@ -1,3 +1,3 @@
 # TypeScript Webpack Starter
 
-Base TS project with webpack
+For when you want to write a quick-and-dirty single-page-app quickly
