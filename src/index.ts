@@ -1,10 +1,9 @@
-import './styles/index.css'
+import "./styles/index.css";
+import { doThing } from "src/utils/something";
 
-(() => {
-  const element = document.createElement('div');
+((): void => {
+  const element = document.createElement("div");
 
-  // Lodash, currently included via a script, is required for this line to work
-  element.innerHTML = 'Hello world';
+  element.innerHTML = doThing();
   document.body.appendChild(element);
-})()
-
+})();

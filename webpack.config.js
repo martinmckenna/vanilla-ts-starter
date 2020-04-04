@@ -22,7 +22,10 @@ module.exports = {
     ],
   },
   resolve: {
-    extensions: ['.tsx', '.ts', '.js'],
+    extensions: ['.ts', '.tsx', '.js'],
+    alias: {
+      src: path.resolve(__dirname, "src/")
+  } 
   },
   devServer: {
     contentBase: './dist',

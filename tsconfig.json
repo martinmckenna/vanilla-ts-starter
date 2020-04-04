@@ -9,7 +9,10 @@
     "allowJs": true,
     "baseUrl": ".",
     "downlevelIteration": true,
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "paths": {
+      "src/*": ["src/*"]
+    }
   },
   "include": [
     "src"
