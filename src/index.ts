@@ -4,6 +4,6 @@ import { doThing } from "src/utils/something";
 ((): void => {
   const element = document.createElement("div");
 
-  element.innerHTML = doThing();
+  element.innerHTML = doThing('hello');
   document.body.appendChild(element);
 })();

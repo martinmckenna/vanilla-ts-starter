@@ -1,8 +1,8 @@
 const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin')
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  mode: "production",
+  mode: 'production',
   entry: './src/index.ts',
   output: {
     filename: 'index.js',
@@ -12,7 +12,7 @@ module.exports = {
     rules: [
       {
         test: /\.tsx?$/,
-        use: 'ts-loader',
+        use: 'babel-loader',
         exclude: /node_modules/,
       },
       {
@@ -24,16 +24,16 @@ module.exports = {
   resolve: {
     extensions: ['.ts', '.tsx', '.js'],
     alias: {
-      src: path.resolve(__dirname, "src/")
-  } 
+      src: path.resolve(__dirname, 'src/'),
+    },
   },
   devServer: {
     contentBase: './dist',
   },
   plugins: [
     new HtmlWebpackPlugin({
-      filename: "index.html",
-      template: "./index.html"
-    })
-  ]
+      filename: 'index.html',
+      template: './index.html',
+    }),
+  ],
 };

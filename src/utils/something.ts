@@ -1,3 +1,3 @@
-export const doThing = (): string => {
-  return "hello world";
+export const doThing = (hello: string): string => {
+  return hello;
 };
