@@ -1,5 +1,5 @@
-import { doThing } from "src/utils/something";
+import { doThing } from 'src/utils/something';
 
-it("should do the thing", () => {
-  expect(doThing('hello')).toBe("hello world");
+it('should do the thing', () => {
+  expect(doThing('hello')).toBe('hello');
 });
