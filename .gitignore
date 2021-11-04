@@ -1,3 +1,9 @@
 node_modules
 dist
-.vscode
+index.js
+index.node.js
+index.d.ts
+coverage
+hot
+**env.example
+**.env
